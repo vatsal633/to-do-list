@@ -1,0 +1,53 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Inter', sans-serif;
+}
+
+body{
+    background-color: aquamarine;
+}
+
+main{
+    display: flex;   
+    height: 100vh;
+    align-items: center;
+}
+
+.list_body{
+    /* border: solid 1px black; */
+    margin: auto;
+    min-width: 21%;
+    background-color: #40dcff;
+    padding: 6px;
+    border-radius: 7px;
+}
+
+.header{
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.work input{
+    padding: 5px 6px;
+    border: none;
+    font-size: 17px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    
+}
+
+input:focus{
+    outline: none;
+}
+
+.work input[type=button]{
+    margin-left: -6px;
+    background-color: #ff4700;
+    color: white;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
