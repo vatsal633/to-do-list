@@ -22,11 +22,13 @@ main{
 .container{
     /* border: solid 1px red; */
     width: 352px;
+    border-radius: 9px;
 }
 
 .add_task{
     padding: 15px;
     background-color: white;
+    border-radius: 9px;
 }
 .header{
     display: flex;
@@ -73,11 +75,23 @@ main{
     background-color: white;
     padding: 15px;
     height: auto;
+    border-radius: 9px;
 }
 
 .container2 h2{
     text-align: center;
+    
 }
+
+/* .container2 button{
+    padding: 7px;
+    background-color: #8052ec;
+    border: none;
+    color: white;
+    border-radius: 3px;
+    float: right;
+    margin-top: 7px;
+} */
 
 .container2 ul {
     list-style: none;
@@ -87,6 +101,21 @@ main{
 .list-container li{
     font-size: 17px;
     position: relative;
+    margin: 8px 0;
+}
+
+.list-container li span{
+    position:absolute;
+    right: 0px;
+}
+.list-container li:hover{
+    cursor:pointer;
+}
+
+.list-container li span:hover{
+    cursor: pointer;
+    background-color: #8052ec;
+    color: white;
 }
 
 .list-container li::before{
@@ -110,11 +139,11 @@ main{
     background-image: url('checked.svg');
 }
 
-.list-container li::after{
+/* .list-container li::after{
     content: "X";
     position: absolute;
     right: 0px;
-}
+} */
 .remove{
     padding: 4px 11px;
     background-color: #8052ec;
